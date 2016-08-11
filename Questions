@@ -133,3 +133,16 @@ IsBackground
 Priority
 
 http://a4academics.com/interview-questions/52-dot-net-interview-questions/421-net-interview-questions-and-answers-on-net-framework
+
+
+MVC
+37) Why to use Html.Partial in MVC?
+
+This method is used to render the specified partial view as an HTML string. This method does not depend on any action methods. We can use this like below –
+
+@Html.Partial("TestPartialView")
+38) What is Html.RenderPartial?
+
+Result of the method – “RenderPartial” is directly written to the HTML response. This method does not return anything (void). This method also does not depend on action methods. RenderPartial() method calls “Write()” internally and we have to make sure that “RenderPartial” method is enclosed in the bracket. Below is the sample code snippet –
+
+@{Html.RenderPartial("TestPartialView"); }
