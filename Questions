@@ -1,0 +1,8 @@
+Delegates
+What are the three types of Generic delegates in C#?
+
+Below are the three types of generic delegates in C# -
+
+Func
+Action
+Predicate
