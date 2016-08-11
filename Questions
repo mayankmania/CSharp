@@ -106,3 +106,30 @@ Below are the predefined attributes in C# -
 Conditional
 Obsolete
 Attribute Usage
+
+15) What is Thread in C#?
+
+Thread is an execution path of a program. Thread is used to define the different or unique flow of control. If our application involves some time consuming processes then it’s better to use Multithreading., which involves multiple threads.
+
+16) List out the states of a thread in C#?
+
+Below are the states of thread –
+
+Unstarted State
+Ready State
+Not Runnable State
+Dead State
+
+17) Explain the methods and properties of Thread class in C#?
+
+Below are the methods and properties of thread class –
+
+CurrentCulture
+CurrentThread
+CurrentContext
+IsAlive
+IsThreadPoolThread
+IsBackground
+Priority
+
+http://a4academics.com/interview-questions/52-dot-net-interview-questions/421-net-interview-questions-and-answers-on-net-framework
