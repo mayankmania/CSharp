@@ -32,6 +32,20 @@ CalculateMyNumbers multiCast = (CalculateMyNumbers)Delegate.Combine (addMyNumber
 multiCast.Invoke(a,b);
 
 6) What is the difference between CType and Directcast in C#?
-
 CType is used for conversion between type and the expression.
 Directcast is used for converting the object type which requires run time type to be the same as specified type.
+
+7) Why to use lock statement in C#?
+Lock will make sure one thread will not intercept the other thread which is running the part of code. So lock statement will make the thread wait, block till the object is being released.
+
+8) Explain Hashtable in C#?
+It is used to store the key/value pairs based on hash code of the key. Key will be used to access the element in the collection. For example,
+
+9) What is enum in C#?
+enum keyword is used for declaring an enumeration, which consists of named constants and it is called as enumerator lists. Enums are value types in C# and these can’t be inherited. Below is the sample code of using Enums
+Eg: enum Fruits { Apple, Orange, Banana, WaterMelon};
+
+10) Write a sample code to write the contents to text file in C#?
+Below is the sample code to write the contents to text file –
+Using System.IO;
+File.WriteAllText(”mytextfilePath”, “MyTestContent”);
