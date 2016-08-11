@@ -99,3 +99,10 @@ Queue
 SortedList
 HashTable
 Bit Array
+
+14) List out the pre defined attributes in C#?
+Below are the predefined attributes in C# -
+
+Conditional
+Obsolete
+Attribute Usage
