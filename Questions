@@ -1,8 +1,37 @@
 Delegates
-What are the three types of Generic delegates in C#?
-
+1)What are the three types of Generic delegates in C#?
 Below are the three types of generic delegates in C# -
 
 Func
 Action
 Predicate
+
+
+2) Can we use delegates for asynchronous method calls in C#?
+Yes. We can use delegates for asynchronous method calls.
+
+3) What are the uses of delegates in C#?
+Below are the list of uses of delegates in C# -
+Callback Mechanism
+Asynchronous Processing
+Abstract and Encapsulate method
+Multicasting
+
+4)What are the differences between events and delegates in C#?
+Main difference between event and delegate is event will provide one more of encapsulation over delegates. 
+So when you are using events destination will listen to it but delegates are naked, which works in subscriber/destination model.
+
+5) Define Multicast Delegate in C#?
+A delegate with multiple handlers are called as multicast delegate. The example to demonstrate the same is given below
+public delegate void CalculateMyNumbers(int x, int y);
+int x = 6;
+int y = 7;
+CalculateMyNumbers addMyNumbers = new CalculateMyNumbers(FuncForAddingNumbers);
+CalculateMyNumbers multiplyMyNumbers = new CalculateMyNumbers(FuncForMultiplyingNumbers);
+CalculateMyNumbers multiCast = (CalculateMyNumbers)Delegate.Combine (addMyNumbers, multiplyMyNumbers);
+multiCast.Invoke(a,b);
+
+6) What is the difference between CType and Directcast in C#?
+
+CType is used for conversion between type and the expression.
+Directcast is used for converting the object type which requires run time type to be the same as specified type.
