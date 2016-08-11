@@ -49,3 +49,53 @@ Eg: enum Fruits { Apple, Orange, Banana, WaterMelon};
 Below is the sample code to write the contents to text file –
 Using System.IO;
 File.WriteAllText(”mytextfilePath”, “MyTestContent”);
+
+11) Explain Copy constructor in C#?
+
+If the constructor contains the same class in the constructor parameter then it is called as copy constructor.
+
+class MyClass
+{
+ public string prop1, prop2;
+ public MyClass(string a, string b)
+ {
+ prop1 = a;
+ prop2 = b;
+ }
+ 
+ public MyClass(MyClass myobj) // Copy Constructor
+ {
+ prop1 = myobj.prop1;
+ prop2 = myobj.prop2;
+ }
+}
+
+12) Explain Indexers in C#?
+
+Indexers are used for allowing the classes to be indexed like arrays. Indexers will resemble the property structure but only difference is indexer’s accessors will take parameters. For example,
+
+class MyCollection<T>
+{
+ private T[] myArr = new T[100];
+ public T this[int t]
+ {
+ get
+ {
+ return myArr[t];
+ }
+ set
+ {
+ myArr[t] = value;
+ }
+ }
+}
+
+13) What are the collection types can be used in C#?
+Below are the collection types in C# -
+
+ArrayList
+Stack
+Queue
+SortedList
+HashTable
+Bit Array
